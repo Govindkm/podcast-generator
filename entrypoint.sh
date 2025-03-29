@@ -7,7 +7,7 @@ git config --global --add safe.directory /github/workspace
 
 apt-get install python3
 
-python /usr/bin/feed.py
+python3 /usr/bin/feed.py
 
 git add .
 git commit -m "Update feed"
