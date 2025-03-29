@@ -1,4 +1,4 @@
-name: "Podcast Feed Generator"
+name: "Custom Podcast Feed Generator"
 description: "Generates a podcast feed from a list of episodes."
 author: "Govind Mishra"
 inputs:
@@ -17,7 +17,7 @@ runs:
     - ${{ inputs.email }}
     - ${{ inputs.name }}
 branding:
-  icon: "podcast"
+  icon: "git-branch"
   color: "blue"
   description: "Generates a podcast feed from a list of episodes."
   name: "Podcast Feed Generator"
