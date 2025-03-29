@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y \
     python3-pip \
     git
 
-RUN pip3 install pyYAML
+RUN pip3 install pyYAML --break-system-packages
 
 COPY feed.py /usr/local/bin/feed.py
 
