@@ -1,0 +1,23 @@
+name: "Podcast Feed Generator"
+description: "Generates a podcast feed from a list of episodes."
+author: "Govind Mishra"
+inputs:
+  email:
+    description: "Commiters email address"
+    required: true
+    default:  ${{ github.actor }}@users.noreply.github.com
+  name:
+    description: "Commiters name"
+    required: true
+    default:  ${{ github.actor }}
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.email }}
+    - ${{ inputs.name }}
+branding:
+  icon: "podcast"
+  color: "blue"
+  description: "Generates a podcast feed from a list of episodes."
+  name: "Podcast Feed Generator"
